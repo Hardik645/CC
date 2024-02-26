@@ -73,7 +73,7 @@
             <li><a href="#price" class="smoothScroll">Explore</a></li>
             <li><a href="#testimonial" class="smoothScroll">Quote</a></li>
             <li>
-              <a href="/login.html"
+              <a href="/index.html"
                 ><button class="smoothScroll" type="button" id="Signoutbutton">
                   Sign Out
                 </button></a
@@ -619,12 +619,12 @@
       let Signout = () => {
         sessionStorage.removeItem("user-creds");
         sessionStorage.removeItem("user-info");
-        window.location.href = "../../login.html";
+        window.location.href = "../../index.html";
       };
 
       let checkCred = () => {
         if (!sessionStorage.getItem("user-creds"))
-          window.location.href = "../../login.html";
+          window.location.href = "../../index.html";
         else {
           MsgHead.innerText = `user with email "${UserCreds.email}" Logged In`;
           GreetHead.innerText = `Welcome ${
